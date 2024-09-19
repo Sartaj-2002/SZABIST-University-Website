@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - SZABIST University Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Notable&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="Images/szabist logo.png" alt="Logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About us.html">About Us</a></li>
+                    <li><a href="Programs.html">Programs</a></li>
+                    <li><a href="blog.html">Blogs</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="ShowMenu()"></i>
+        </nav>
+        <section class="blog">
+            <h1 style="color: white;">Latest Blog Posts</h1>
+            <div class="blog-posts">
+                <article class="blog-post">
+                    <h2>Innovative Teaching Methods at SZABIST</h2>
+                    <p class="date">August 9, 2024</p>
+                    <p>At SZABIST, we are constantly exploring new teaching methods to enhance the learning experience. From interactive lectures to hands-on projects, our innovative approaches are designed to engage students and foster a deeper understanding of the material.</p>
+                    <a href="https://szabist.edu.pk/research-center/" class="read-more" target="_blank" rel="noopener noreferrer">Read More</a>
+                </article>
+    
+                <article class="blog-post">
+                    <h2>Recent Achievements of Our Alumni</h2>
+                    <p class="date">August 5, 2024</p>
+                    <p>Our alumni continue to make us proud with their remarkable achievements. From leadership roles in top companies to groundbreaking research, the accomplishments of our graduates reflect the quality of education at SZABIST.</p>
+                    <a href="https://szabist.edu.pk/research-journals/" class="read-more" target="_blank" rel="noopener noreferrer">Read More</a>
+                </article>
+    
+                <article class="blog-post">
+                    <h2>Upcoming Events at SZABIST</h2>
+                    <p class="date">July 30, 2024</p>
+                    <p>Stay updated on the latest events happening at SZABIST. We have a variety of exciting activities planned, including seminars, workshops, and networking opportunities for students and alumni.</p>
+                    <a href="https://szabist.edu.pk/events/" class="read-more" target="_blank" rel="noopener noreferrer">Read More</a>
+                </article>
+    
+                <!-- Add more blog posts as needed -->
+            </div>
+        </section>
+    
+    </section>
+
+    
+    <footer class="bg-dark text-white text-center py-3">
+        <p style="color: white;">&copy; 2024 Digi Creations. All rights reserved.</p>
+    </footer>
+
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function ShowMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
